@@ -1,0 +1,183 @@
+/* 字體庫 */
+/* 標題 */
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+/* 說明 */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+/* 主Css */
+* {
+    padding: 0;
+    margin: 0;
+}
+/* 滾動條 */
+main::-webkit-scrollbar {
+    width: 8px;
+}
+
+main::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: #4d4b4b;
+    border-radius: 5px;
+    border: 2px solid #f1f1f100;
+}
+
+header, footer {
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+header::-webkit-scrollbar, footer::-webkit-scrollbar {
+    display: none;  
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* 主Css區塊 */
+body {
+    background-color: #0e0d0d;
+}
+header {
+    background-color:rgba(28, 33, 56, 0.507);
+    height:80px;
+    width:100%;
+    position:fixed;    
+}
+
+.home-link {
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer; 
+}
+
+h1 {
+    color:#487598;
+    position:absolute;
+    left:10px;
+    top:0;
+    line-height: 80px;
+    background-image:url("/images/logo.svg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:450px;
+    text-indent: -9999px; 
+}
+
+header ul {
+    position:absolute;
+    right:-2vw;
+    top:0;
+    line-height:80px;
+}
+header li {
+    display:inline;
+    margin-right:4vw;    
+}
+header a {
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Kiwi Maru", serif;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color:#000000;
+    color:#B7B7B7;
+    height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.menu {
+    display:none;
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: "Klee One", cursive;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 5px 0;
+    font-family: "Kiwi Maru", serif;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 響應式設計 */
+@media screen and (max-width: 768px) {
+header ul {
+    display:none;
+}
+
+header h1 {
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.menu {
+    display:block;
+    background-color: transparent;
+    color:white;
+    font-size: 35px;
+    position:absolute;
+    top:15px;
+    left:20px;
+    border:none;
+    cursor: pointer;
+}
+}

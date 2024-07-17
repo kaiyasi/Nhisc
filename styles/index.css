@@ -1,0 +1,502 @@
+/* 字體庫 */
+/* 標題 */
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+/* 首頁slogan */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+/* 首頁slogan */
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap');
+/* 說明 */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+/* 主Css */
+a{
+    text-decoration: none;
+}
+
+.front {
+    background-color: antiquewhite;
+    color:white;
+    height:95vh;
+    background-image: url("/images/banner.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+} 
+.front h2 {
+    font-size:60px;
+    font-family: "Klee One", cursive;
+    margin-top:60px;
+} 
+.front p {
+    color:#FEF7E6;
+    font-size:18px;
+    font-family: "Playwrite CU", cursive;
+    margin:25px 0;
+}
+
+.slogan {
+    background-color:#3d3d3d;
+    color:white;
+    height:250px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-family: "LXGW WenKai TC", cursive;
+    line-height: 1.8em;  
+}
+
+.feature {
+    background-color: #252525;
+    padding: 50px 0;
+    color: white;
+}
+
+.feature h3 {
+    font-size: 40px;
+    margin-bottom: px; 
+    text-align: center;
+    font-family: "Klee One", cursive;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px; 
+}
+
+.feature hr{
+    position: relative;
+    border: none;
+    height: 1px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.feature hr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.feature hr::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: 
+        linear-gradient(
+            to right,
+            #252525,
+            #fff 20%,
+            #fff 80%,
+            #252525
+        );
+}
+
+.feature-item {
+    width: calc(25% - 30px);
+    text-align: center;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.feature-item svg {
+    margin-bottom: 25px;
+}
+
+.feature-item h4 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-family: "Klee One", cursive;
+}
+
+.feature-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Kiwi Maru", serif;
+}
+
+.object {
+    background-color: #252525;
+    padding: 50px 0;
+    color: white;
+}
+
+.object h3 {
+    font-size: 40px;
+    margin-bottom: 50px; 
+    text-align: center;
+    font-family: "Klee One", cursive;
+}
+
+.object hr{
+    position: relative;
+    border: none;
+    height: 1px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.object hr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.object hr::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: 
+        linear-gradient(
+            to right,
+            #252525,
+            #fff 20%,
+            #fff 80%,
+            #252525
+        );
+}
+
+.objects-container {
+    max-width: calc(300px * 4 + 30px * 4); 
+    margin: 0 auto; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    padding-bottom: 20px; 
+}
+
+.objects {
+    display: flex;
+    gap: 30px;
+    padding: 0 20px; 
+    width: max-content; 
+}
+
+.object-item {
+    width: 300px; 
+    flex-shrink: 0; 
+    scroll-snap-align: start; 
+    margin-top: 15px;
+    text-align: center;
+    padding: 20px; 
+    box-sizing: border-box;
+    height: 410px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.object-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.object-item h4 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-family: "Klee One", cursive;
+}
+
+.object-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Kiwi Maru", serif;
+}
+
+.circular-image {
+    width: 180px; 
+    height: 180px; 
+    border-radius: 10%;
+    overflow: hidden;
+    margin: 0 auto 25px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.objects-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.objects-container::-webkit-scrollbar-track {
+    background: #333;
+}
+
+.objects-container::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 4px;
+}
+
+.objects-container::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+.link {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    padding-block: 0.3rem;  
+    padding-inline: 1rem;   
+    background-color: rgb(97, 98, 99);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 8px; 
+    font-weight: bold;
+    border: 2px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 13px;  
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 10px auto; 
+    width: fit-content;
+}
+
+.icon {
+    width: 20px;  
+    height: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+}
+
+.link:hover .icon {
+    transform: translate(4px);
+}
+
+.link:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    width: 80px; 
+    height: 100%;
+    background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -80px;  
+    opacity: 0.6;
+}
+
+.quality {
+    background-color: #252525;
+    padding: 50px 0;
+    color: white;
+}
+
+.quality h3 {
+    font-size: 40px;
+    margin-bottom: px; 
+    text-align: center;
+    font-family: "Klee One", cursive;
+}
+
+.qualitys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px; 
+}
+
+.quality hr{
+    position: relative;
+    border: none;
+    height: 1px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.quality hr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.quality hr::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: 
+        linear-gradient(
+            to right,
+            #252525,
+            #fff 20%,
+            #fff 80%,
+            #252525
+        );
+}
+
+.quality-item {
+    width: calc(25% - 30px);
+    text-align: center;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.quality-item svg {
+    margin-bottom: 25px;
+}
+
+.quality-item h4 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-family: "Klee One", cursive;
+}
+
+.quality-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Kiwi Maru", serif;
+}
+
+.cooperate {
+    background-color: #252525;
+    padding: 50px 0;
+    color: white;
+}
+
+.cooperate h3 {
+    font-size: 40px;
+    margin-bottom: 50px; 
+    text-align: center;
+    font-family: "Klee One", cursive;
+}
+
+.cooperate hr{
+    position: relative;
+    border: none;
+    height: 1px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.cooperate hr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.cooperate hr::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: 
+        linear-gradient(
+            to right,
+            #252525,
+            #fff 20%,
+            #fff 80%,
+            #252525
+        );
+}
+
+.cooperates {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    padding: 0 20px;
+    max-width: 2100px; 
+    margin: 0 auto;
+}
+
+.cooperate-item {
+    width: calc((100% - 75px) / 7); 
+    min-width: 120px; 
+    max-width: 200px; 
+    margin-top: 15px;
+    text-align: center;
+    padding: 15px; 
+    box-sizing: border-box;
+    height: auto; 
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cooperate-item h4 {
+    font-size: 25px; 
+    margin-bottom: 15px;
+    font-family: "Klee One", cursive;
+}
+
+.cooperate-item a {
+    font-size: 20px; 
+    line-height: 1.4;
+    color: #ffffff;
+    font-family: "Kiwi Maru", serif;
+}
+
+.cooperate-image {
+    width: 150px; 
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.cooperate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
