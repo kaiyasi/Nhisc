@@ -1,0 +1,78 @@
+/* 字體庫 */
+/* 標題 */
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+/* font-family: "Klee One", cursive; */
+/* 內文 */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+/* font-family: "Kiwi Maru", serif; */
+
+/* 主Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family:"Kiwi Maru", serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+.guide {
+    align-self: flex-start;
+    margin: 130px 0 50px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: flex;
+    width: 100%;
+    margin-bottom: 60px;
+    
+}
+
+.content {
+    width: 50%;
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+}
+
+.content h2{
+    font-family: "Klee One", cursive;
+    font-size: 32px;
+}
+
+.content p {
+    margin-top: 15px;
+    font-family: "Kiwi Maru", serif;
+}
+
+.image {
+    width: 45%;
+    max-width: 600px;
+    align-self: center;
+}
+
+.image img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
