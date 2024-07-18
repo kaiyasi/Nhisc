@@ -1,0 +1,128 @@
+/* 字體庫 */
+/* 標題 */
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+/* font-family: "Klee One", cursive; */
+/* 內文 */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+/* font-family: "Kiwi Maru", serif; */
+
+/* 主Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family:"Kiwi Maru", serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+.guide {
+    align-self: flex-start;
+    margin: 130px 0 50px;
+}
+
+.content-header {
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.content-header h2 {
+    font-family: "Klee One", cursive;
+    font-size: 32px;
+    text-align: center;
+}
+
+.content-header p {
+    margin-top: 15px;
+    font-family: "Kiwi Maru", serif;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+}
+
+.text-only, .text-image {
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.text-only h3, .text-image h3 {
+    font-family: "Klee One", cursive;
+    font-size: 24px;
+    margin: 0 0 15px 40px;
+}
+
+.text-only p, .text-image p {
+    font-family: "Kiwi Maru", serif;
+    line-height: 1.6;
+    margin-left: 75px;
+}
+
+.text-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-image .text {
+    flex: 1;
+}
+
+.text-image .image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.text-image .image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.content-title {
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.content-title h2 {
+    font-family: "Klee One", cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
+.content-title p {
+    margin-top: 15px;
+    font-family: "Kiwi Maru", serif;
+    text-align: center;
+    font-size: 25px;
+}

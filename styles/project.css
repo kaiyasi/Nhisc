@@ -33,32 +33,44 @@ a:hover {
     padding: 0 20px;
 }
 
+.guide {
+    align-self: flex-start;
+    margin: 130px 0 50px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: flex;
+    width: 100%;
+    margin-bottom: 60px;
+    
+}
+
 .content {
     width: 50%;
     padding: 20px;
     color: #fff;
     border-radius: 8px;
+    margin-bottom: 50px;
     margin-right: 80px;
-    margin-bottom: 19px;
 }
 
-img {
-    max-width: 500px;
+.content a{
+    font-size: 28px;
+}
+
+.content p {
+    margin-top: 15px;
+    font-family: "Kiwi Maru", serif;
+}
+
+.image {
+    width: 45%;
+    max-width: 600px;
     align-self: center;
-    margin-top: 150px;
-    width: 180%;
-    height: auto;
+}
+
+.image img {
+    width: 80%;
     border-radius: 8px;
-    margin-left: 50px;
-}
-
-.content a {
-    margin-left: 200px;
-    font-size: 24px;
-}
-
-.content h2 {
-    margin-left: 238px;
-    font-size: 24px;
-    font-family: "Klee One", cursive;
 }
