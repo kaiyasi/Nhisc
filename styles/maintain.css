@@ -1,0 +1,47 @@
+/* 字體庫 */
+/* 標題 */
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+/* font-family: "Klee One", cursive; */
+/* 內文 */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+/* font-family: "Kiwi Maru", serif; */
+
+.maintainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 101%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+.maintain {
+    width: 50%;
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+    margin-right: 80px;
+    margin-bottom: 19px;
+}
+
+img {
+    max-width: 500px;
+    align-self: center;
+    margin-top: 150px;
+    width: 180%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 50px;
+}
+
+.maintain a {
+    margin-left: 200px;
+    font-size: 24px;
+}
+
+.maintain h2 {
+    margin-left: 238px;
+    font-size: 24px;
+    font-family: "Klee One", cursive;
+}
