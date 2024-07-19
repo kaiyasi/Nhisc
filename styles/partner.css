@@ -23,42 +23,95 @@ a:hover {
     text-decoration: underline;
 }
 
+.partner {
+    padding: 60px 0;
+}
+
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
     max-width: 1200px;
-    margin: 10px auto;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
-.content {
-    width: 50%;
-    padding: 20px;
+.guide {
+    align-self: flex-start;
+    margin: 70px 0 50px;
+}
+
+.partner h2 {
     color: #fff;
-    border-radius: 8px;
-    margin-right: 80px;
-    margin-bottom: 19px;
-}
-
-img {
-    max-width: 500px;
-    align-self: center;
-    margin-top: 150px;
-    width: 180%;
-    height: auto;
-    border-radius: 8px;
-    margin-left: 50px;
-}
-
-.content a {
-    margin-left: 200px;
-    font-size: 24px;
-}
-
-.content h2 {
-    margin-left: 238px;
-    font-size: 24px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
     font-family: "Klee One", cursive;
+}
+
+.partner hr{
+    position: relative;
+    border: none;
+    height: 1px;
+    width: 100%;
+    margin: 30px auto 40px;
+}
+
+.partner hr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.partner hr::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: 
+        linear-gradient(
+            to right,
+            #252525,
+            #fff 20%,
+            #fff 80%,
+            #252525
+        );
+}
+
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.partner-item {
+    text-align: center;
+}
+
+.partner-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.partner-item a {
+    text-decoration: none;
+}
+
+.partner-item h4 {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.partner-item:hover h4 {
+    color: #3897f0;  /* Instagram blue color */
 }
