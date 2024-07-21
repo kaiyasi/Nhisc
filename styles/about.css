@@ -23,42 +23,159 @@ a:hover {
     text-decoration: underline;
 }
 
+.about-us {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 0;
+}
+
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
     max-width: 1200px;
-    margin: 10px auto;
-    padding: 0 20px;
-}
-
-.content {
-    width: 50%;
+    margin: 0 auto;
     padding: 20px;
+}
+
+.guide {
+    align-self: flex-start;
+    margin: 130px 0 50px;
+}
+
+.content-wrapper {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
     color: #fff;
-    border-radius: 8px;
-    margin-right: 80px;
-    margin-bottom: 19px;
 }
 
-img {
-    max-width: 500px;
-    align-self: center;
-    margin-top: 150px;
-    width: 180%;
-    height: auto;
-    border-radius: 8px;
-    margin-left: 50px;
+.group-photo-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
 }
 
-.content a {
-    margin-left: 200px;
-    font-size: 24px;
+.group-photo {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://i.meee.com.tw/YLfAhb3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.content h2 {
-    margin-left: 238px;
-    font-size: 24px;
+.features {
+    padding: 30px;
+}
+
+.features h2 {
+    color: #489644;
+    text-align: center;
+    margin-bottom: 30px;
     font-family: "Klee One", cursive;
+    font-size: 32px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.feature-item h3 {
+    color: #487598 ;
+    margin-bottom: 10px;
+    font-family: "Klee One", cursive;
+}
+
+.feature-item  {
+    font-family: "Kiwi Maru", serif;
+}
+
+.past-websites {
+    padding: 30px;
+    background-color: rgba(66, 66, 66, 0.1);
+}
+
+.past-websites h3 {
+    color: #487598 ;
+    margin-bottom: 15px;
+    font-family: "Klee One", cursive;
+}
+
+.past-websites ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.past-websites li {
+    margin-bottom: 10px;
+}
+
+.past-websites a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.past-websites a:hover {
+    text-decoration: underline;
+}
+
+.club-intro {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.219);
+    margin-bottom: 20px;
+}
+
+.club-intro h2 {
+    color: #489644;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Klee One", cursive;
+    font-size: 32px;
+}
+
+.club-intro p {
+    font-family: "Kiwi Maru", serif;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.slogan {
+    padding: 40px 30px;
+    background-color: rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    margin: 20px 0;
+}
+
+.slogan h2 {
+    color: #9EC9B3 ;
+    font-family: "Klee One", cursive;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.slogan p {
+    font-family: "Kiwi Maru", serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.features, .club-intro, .past-websites {
+    margin-bottom: 20px;
+}
+
+.features h2, .past-websites h3 {
+    color: #489644;
+}
+
+.feature-item h3 {
+    color: #487598;
 }
