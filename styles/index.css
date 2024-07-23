@@ -500,3 +500,81 @@ a{
     height: 100%;
     object-fit: cover;
 }
+
+/* 在文件末尾添加以下代碼 */
+
+@media screen and (max-width: 768px) {
+    /* 首頁 */
+    .front h2 {
+    font-size: 40px;
+    }
+    
+    .front p {
+    font-size: 16px;
+    text-align:center;
+    }
+
+    /* Slogan */
+    .slogan {
+    font-size: 22px;
+    padding: 20px;
+    height: auto;
+    text-align:center
+    }
+
+    /* 特色區塊 */
+    .feature-item {
+    width: calc(50% - 20px);
+    }
+
+    /* 對象區塊 */
+    .objects-container {
+    max-width: 100%;
+    }
+
+    .object-item {
+    width: 250px;
+    }
+
+    /* 品質區塊 */
+    .quality-item {
+    width: calc(50% - 20px);
+    }
+
+    /* 合作夥伴區塊 */
+    .cooperates {
+    flex-wrap: wrap;
+    }
+
+    .cooperate-item {
+    width: calc(50% - 15px);
+    min-width: auto;
+    }
+
+    .cooperate-image {
+    width: 120px;
+    height: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* 首頁 */
+    .front h2 {
+    font-size: 32px;
+    }
+
+    /* 特色區塊 */
+    .feature-item {
+    width: 100%;
+    }
+
+    /* 品質區塊 */
+    .quality-item {
+    width: 100%;
+    }
+
+    /* 合作夥伴區塊 */
+    .cooperate-item {
+    width: 100%;
+    }
+}

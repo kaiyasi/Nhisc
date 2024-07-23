@@ -127,3 +127,95 @@ a:hover {
     font-size: 25px;
 }
 
+/* 響應式設計 */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .content-header h2, .content-title h2 {
+        font-size: 28px;
+    }
+
+    .content-title p {
+        font-size: 22px;
+    }
+
+    .text-only h3, .text-image h3 {
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+    .text-only p, .text-image p {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .guide {
+        margin: 80px 0 30px;
+    }
+
+    .content-header, .content-title {
+        margin-bottom: 30px;
+    }
+
+    .content-header h2, .content-title h2 {
+        font-size: 26px;
+    }
+
+    .content-title p {
+        font-size: 20px;
+    }
+
+    .text-only h3, .text-image h3 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .text-only p, .text-image p {
+        margin-left: 20px;
+    }
+
+    .text-image {
+        flex-direction: column;
+    }
+
+    .text-image .text, .text-image .image {
+        flex: none;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .guide {
+        margin: 60px 0 20px;
+    }
+
+    .content-header, .content-title, .text-only, .text-image {
+        padding: 15px;
+    }
+
+    .content-header h2, .content-title h2 {
+        font-size: 24px;
+    }
+
+    .content-title p {
+        font-size: 18px;
+    }
+
+    .text-only h3, .text-image h3 {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .text-only p, .text-image p {
+        margin-left: 0;
+        font-size: 14px;
+    }
+}

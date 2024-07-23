@@ -179,3 +179,69 @@ a:hover {
 .feature-item h3 {
     color: #487598;
 }
+
+/* 響應式設計 */
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .guide {
+        margin: 80px 0 30px;
+    }
+
+    .group-photo-container {
+        height: 300px;
+    }
+
+    .features h2, .club-intro h2 {
+        font-size: 28px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slogan h2 {
+        font-size: 24px;
+    }
+
+    .slogan p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .guide {
+        margin: 60px 0 20px;
+    }
+
+    .group-photo-container {
+        height: 200px;
+    }
+
+    .features, .club-intro, .past-websites {
+        padding: 20px;
+    }
+
+    .features h2, .club-intro h2 {
+        font-size: 24px;
+    }
+
+    .feature-item h3 {
+        font-size: 18px;
+    }
+
+    .slogan {
+        padding: 30px 20px;
+    }
+
+    .slogan h2 {
+        font-size: 22px;
+    }
+
+    .slogan p {
+        font-size: 18px;
+    }
+}

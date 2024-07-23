@@ -113,5 +113,72 @@ a:hover {
 }
 
 .partner-item:hover h4 {
-    color: #3897f0;  /* Instagram blue color */
+    color: #3897f0; 
+}
+
+/* 響應式設計 */
+
+@media screen and (max-width: 1024px) {
+    .partner-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .partner {
+        padding: 40px 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .guide {
+        margin: 50px 0 30px;
+    }
+
+    .partner h2 {
+        font-size: 28px;
+    }
+
+    .partner-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .partner-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .partner {
+        padding: 30px 0;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .guide {
+        margin: 40px 0 20px;
+    }
+
+    .partner h2 {
+        font-size: 24px;
+    }
+
+    .partner-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .partner-item h4 {
+        font-size: 14px;
+    }
 }
