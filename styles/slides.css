@@ -1,0 +1,148 @@
+/* 字體庫 */
+/* 標題 */
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+/* font-family: "Klee One", cursive; */
+/* 內文 */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+/* font-family: "Kiwi Maru", serif; */
+
+/* 主Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family:"Kiwi Maru", serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+.guide {
+    align-self: flex-start;
+    margin: 130px 0 50px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: flex;
+    width: 100%;
+    margin-bottom: 60px;
+    
+}
+
+.content {
+    width: 50%;
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+}
+
+.content a{
+    font-size: 28px;
+}
+
+.content p {
+    margin-top: 15px;
+    font-family: "Kiwi Maru", serif;
+}
+
+.image {
+    width: 45%;
+    max-width: 600px;
+    align-self: center;
+}
+
+.image img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+/* 響應式設計 */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .content {
+        margin-right: 40px;
+    }
+
+    .content a {
+        font-size: 24px;
+    }
+
+    .image img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .guide {
+        margin: 80px 0 30px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .content {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .content a {
+        font-size: 22px;
+    }
+
+    .image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .guide {
+        margin: 60px 0 20px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .content a {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+}
