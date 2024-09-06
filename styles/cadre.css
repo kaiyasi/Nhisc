@@ -66,16 +66,6 @@ a:hover {
     font-family: "Kiwi Maru", serif;
 }
 
-.image {
-    width: 45%;
-    max-width: 600px;
-    align-self: center;
-}
-
-.image img {
-    width: 80%;
-    border-radius: 8px;
-}
 
 /* 響應式設計 */
 
