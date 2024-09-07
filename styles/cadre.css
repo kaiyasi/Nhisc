@@ -58,14 +58,17 @@ a:hover {
 }
 
 .content a{
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .content p {
-    margin-top: 15px;
+    margin-top: 10px;
     font-family: "Kiwi Maru", serif;
 }
 
+h2{
+    margin-bottom: 15px;
+}
 
 /* 響應式設計 */
 

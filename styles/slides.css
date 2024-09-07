@@ -1,10 +1,6 @@
 /* 字體庫 */
-/* 標題 */
 @import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
-/* font-family: "Klee One", cursive; */
-/* 內文 */
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
-/* font-family: "Kiwi Maru", serif; */
 
 /* 主Css */
 * {
@@ -13,10 +9,17 @@
     box-sizing: border-box;
 }
 
-a{
+body {
+    background-color: #1a1a1a;
+    font-family: "Kiwi Maru", serif;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
     text-decoration: none;
     color: #fff;
-    font-family:"Kiwi Maru", serif;
+    font-family: "Kiwi Maru", serif;
 }
 
 a:hover {
@@ -36,49 +39,57 @@ a:hover {
 .guide {
     align-self: flex-start;
     margin: 130px 0 50px;
-    
 }
 
 .content-wrapper {
-    display: flex;
-    flex-direction: flex;
     width: 100%;
     margin-bottom: 60px;
-    background-color: rgb(48, 45, 45);
-    border-radius: 10px;
 }
 
-.content {
-    width: 50%;
-    padding: 20px;
-    color: #fff;
-    border-radius: 8px;
-    margin-bottom: 50px;
-    margin-right: 80px;
-}
-
-.content a{
+h2 {
     font-size: 28px;
-}
-
-.content p {
-    margin-top: 15px;
+    margin-bottom: 20px;
     font-family: "Kiwi Maru", serif;
+    color: #fff;
 }
 
-.image {
-    width: 45%;
-    max-width: 600px;
-    align-self: center;
+.course-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.image img {
-    width: 80%;
+.detail-box {
+    background-color: #333;
+    padding: 20px;
     border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.detail-box a {
+    margin-top: 0;
+    font-size:22px;
+    font-family: "Kiwi Maru", serif;
+    color: beige;
+}
+
+.detail-box a:hover {
+    text-decoration: underline;
+}
+
+.detail-box p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-family: "Kiwi Maru", serif;
+    color: #fff;
 }
 
 /* 響應式設計 */
-
 @media screen and (max-width: 1024px) {
     .container {
         padding: 0 15px;
@@ -94,6 +105,15 @@ a:hover {
 
     .image img {
         width: 90%;
+    }
+
+    .course-details {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .detail-box {
+        padding: 15px;
     }
 }
 
@@ -125,6 +145,15 @@ a:hover {
     .image img {
         width: 100%;
     }
+
+    .course-details {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .detail-box {
+        padding: 15px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -146,5 +175,17 @@ a:hover {
 
     .content p {
         font-size: 14px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .detail-box {
+        padding: 10px;
+    }
+
+    .course-details {
+        grid-template-columns: 1fr;
     }
 }
