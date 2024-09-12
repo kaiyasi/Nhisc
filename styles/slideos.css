@@ -1,28 +1,28 @@
-/* 字體庫 */
-/* 標題 */
+/* Font Imports */
 @import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
-/* font-family: "Klee One", cursive; */
-/* 內文 */
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
-/* font-family: "Kiwi Maru", serif; */
 
-/* 主Css */
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+body {
+    font-family: "Kiwi Maru", serif;
+}
+
+a {
     text-decoration: none;
     color: #fff;
-    font-family:"Kiwi Maru", serif;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
+/* Layout */
 .container {
     display: flex;
     flex-direction: column;
@@ -38,7 +38,9 @@ a:hover {
     margin: 130px 0 50px;
 }
 
-.content-header {
+/* Content Styles */
+.content-header,
+.content-title {
     width: 100%;
     padding: 20px;
     color: #fff;
@@ -46,16 +48,25 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.content-header h2 {
+.content-header h2,
+.content-title h2 {
     font-family: "Klee One", cursive;
     font-size: 32px;
     text-align: center;
 }
 
-.content-header p {
+.content-header p,
+.content-title p {
     margin-top: 15px;
-    font-family: "Kiwi Maru", serif;
     text-align: center;
+}
+
+.content-title h2 {
+    font-size: 35px;
+}
+
+.content-title p {
+    font-size: 25px;
 }
 
 .content-wrapper {
@@ -65,7 +76,8 @@ a:hover {
     gap: 40px;
 }
 
-.text-only, .text-image {
+.text-only,
+.text-image {
     width: 100%;
     padding: 20px;
     color: #fff;
@@ -73,27 +85,32 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.text-only h3, .text-image h3 {
+.text-only h3,
+.text-image h3 {
     font-family: "Klee One", cursive;
     font-size: 24px;
     margin: 0 0 15px 40px;
 }
 
-.text-only p, .text-image p {
-    font-family: "Kiwi Maru", serif;
+.text-only p,
+.text-image p {
     line-height: 1.6;
     margin-left: 75px;
 }
 
+
 .text-image {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start; /* 改為flex-start以確保內容從頂部對齊 */
     gap: 20px;
 }
 
 .text-image .text {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 確保文字從頂部開始 */
 }
 
 .text-image .image {
@@ -106,35 +123,14 @@ a:hover {
     border-radius: 8px;
 }
 
-.content-title {
-    width: 100%;
-    padding: 20px;
-    color: #fff;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.content-title h2 {
-    font-family: "Klee One", cursive;
-    font-size: 35px;
-    text-align: center;
-}
-
-.content-title p {
-    margin-top: 15px;
-    font-family: "Kiwi Maru", serif;
-    text-align: center;
-    font-size: 25px;
-}
-
-/* 響應式設計 */
-
+/* Responsive Design */
 @media screen and (max-width: 1024px) {
     .container {
         padding: 0 15px;
     }
 
-    .content-header h2, .content-title h2 {
+    .content-header h2,
+    .content-title h2 {
         font-size: 28px;
     }
 
@@ -142,12 +138,14 @@ a:hover {
         font-size: 22px;
     }
 
-    .text-only h3, .text-image h3 {
+    .text-only h3,
+    .text-image h3 {
         font-size: 22px;
         margin-left: 20px;
     }
 
-    .text-only p, .text-image p {
+    .text-only p,
+    .text-image p {
         margin-left: 40px;
     }
 }
@@ -157,11 +155,13 @@ a:hover {
         margin: 80px 0 30px;
     }
 
-    .content-header, .content-title {
+    .content-header,
+    .content-title {
         margin-bottom: 30px;
     }
 
-    .content-header h2, .content-title h2 {
+    .content-header h2,
+    .content-title h2 {
         font-size: 26px;
     }
 
@@ -169,22 +169,31 @@ a:hover {
         font-size: 20px;
     }
 
-    .text-only h3, .text-image h3 {
+    .text-only h3,
+    .text-image h3 {
         font-size: 20px;
         margin-left: 10px;
     }
 
-    .text-only p, .text-image p {
+    .text-only p,
+    .text-image p {
         margin-left: 20px;
     }
 
     .text-image {
         flex-direction: column;
+        align-items: center; /* 在小屏幕上居中對齊 */
     }
 
-    .text-image .text, .text-image .image {
+    .text-image .text,
+    .text-image .image {
         flex: none;
         max-width: 100%;
+        width: 100%; /* 確保在小屏幕上佔滿寬度 */
+    }
+
+    .text-image .text {
+        align-items: flex-start; /* 確保文字在小屏幕上左對齊 */
     }
 }
 
@@ -197,11 +206,15 @@ a:hover {
         margin: 60px 0 20px;
     }
 
-    .content-header, .content-title, .text-only, .text-image {
+    .content-header,
+    .content-title,
+    .text-only,
+    .text-image {
         padding: 15px;
     }
 
-    .content-header h2, .content-title h2 {
+    .content-header h2,
+    .content-title h2 {
         font-size: 24px;
     }
 
@@ -209,12 +222,14 @@ a:hover {
         font-size: 18px;
     }
 
-    .text-only h3, .text-image h3 {
+    .text-only h3,
+    .text-image h3 {
         font-size: 18px;
         margin-left: 0;
     }
 
-    .text-only p, .text-image p {
+    .text-only p,
+    .text-image p {
         margin-left: 0;
         font-size: 14px;
     }
