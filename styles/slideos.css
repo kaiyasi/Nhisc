@@ -55,6 +55,13 @@ a:hover {
     text-align: center;
 }
 
+.content-header h4,
+.content-title h4 {
+    font-family: "Klee One", cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
 .content-header p,
 .content-title p {
     margin-top: 15px;
@@ -91,6 +98,7 @@ a:hover {
     font-size: 24px;
     margin: 0 0 15px 40px;
 }
+
 
 .text-only p,
 .text-image p {
@@ -134,6 +142,11 @@ a:hover {
         font-size: 28px;
     }
 
+    .content-header h4,
+    .content-title h4 {
+        font-size: 26px;
+    }
+
     .content-title p {
         font-size: 22px;
     }
@@ -163,6 +176,11 @@ a:hover {
     .content-header h2,
     .content-title h2 {
         font-size: 26px;
+    }
+
+    .content-header h4,
+    .content-title h4 {
+        font-size: 24px;
     }
 
     .content-title p {
@@ -218,6 +236,11 @@ a:hover {
         font-size: 24px;
     }
 
+    .content-header h4,
+    .content-title h4 {
+        font-size: 22px;
+    }
+
     .content-title p {
         font-size: 18px;
     }
@@ -227,6 +250,8 @@ a:hover {
         font-size: 18px;
         margin-left: 0;
     }
+
+
 
     .text-only p,
     .text-image p {
