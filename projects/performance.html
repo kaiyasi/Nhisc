@@ -88,4 +88,17 @@
         <p>Copyright © 2024 內中資研 All Rights Reserved.</p>
     </footer>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuButton = document.querySelector('.menu');
+        const nav = document.querySelector('nav');
+
+        menuButton.addEventListener('click', function() {
+            nav.classList.toggle('active');
+            menuButton.textContent = nav.classList.contains('active') ? '✕' : '☰';
+        });
+    });
+</script>
+
 </html>

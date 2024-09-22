@@ -45,7 +45,7 @@ a:hover {
     padding: 20px;
     color: #fff;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 40px; /* Increased from 15px to 40px */
 }
 
 .content-header h2,
@@ -53,6 +53,7 @@ a:hover {
     font-family: "Klee One", cursive;
     font-size: 32px;
     text-align: center;
+    margin-bottom: 20px; /* Added margin to separate title from paragraph */
 }
 
 .content-header h4,
@@ -60,6 +61,7 @@ a:hover {
     font-family: "Klee One", cursive;
     font-size: 30px;
     text-align: center;
+    margin-bottom: 20px; /* Added margin to separate title from paragraph */
 }
 
 .content-header p,
@@ -90,15 +92,15 @@ a:hover {
     color: #fff;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px; /* Added margin to separate content blocks */
 }
 
 .text-only h3,
 .text-image h3 {
     font-family: "Klee One", cursive;
     font-size: 24px;
-    margin: 0 0 15px 40px;
+    margin: 0 0 20px 40px; /* Increased bottom margin from 15px to 20px */
 }
-
 
 .text-only p,
 .text-image p {
@@ -106,11 +108,10 @@ a:hover {
     margin-left: 75px;
 }
 
-
 .text-image {
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* 改為flex-start以確保內容從頂部對齊 */
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -118,7 +119,7 @@ a:hover {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* 確保文字從頂部開始 */
+    justify-content: flex-start;
 }
 
 .text-image .image {
@@ -200,18 +201,18 @@ a:hover {
 
     .text-image {
         flex-direction: column;
-        align-items: center; /* 在小屏幕上居中對齊 */
+        align-items: center;
     }
 
     .text-image .text,
     .text-image .image {
         flex: none;
         max-width: 100%;
-        width: 100%; /* 確保在小屏幕上佔滿寬度 */
+        width: 100%;
     }
 
     .text-image .text {
-        align-items: flex-start; /* 確保文字在小屏幕上左對齊 */
+        align-items: flex-start;
     }
 }
 
@@ -250,8 +251,6 @@ a:hover {
         font-size: 18px;
         margin-left: 0;
     }
-
-
 
     .text-only p,
     .text-image p {
