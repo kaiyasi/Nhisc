@@ -452,7 +452,7 @@ a{
   }
   
   .cooperate-item {
-    width: calc((100% - 75px) / 7);
+    width: calc((100% - 60px) / 4);
     min-width: 120px;
     max-width: 200px;
     margin-top: 15px;
@@ -541,7 +541,7 @@ a{
         min-width: auto;
       }
     
-      .cooperate-image {
+    .cooperate-image {
         width: 120px;
         height: 120px;
       }
