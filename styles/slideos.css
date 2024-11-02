@@ -132,6 +132,26 @@ a:hover {
     border-radius: 8px;
 }
 
+.item {
+    display: inline-block; /* 讓項目能夠使用margin來間隔 */
+    margin-right: 50px; /* 根據需要調整間距 */
+}
+
+.section {
+    margin-bottom: 20px; /* 每個區塊之間的間距 */
+}
+
+.title-item {
+    font-weight: bold; /* 標題項目加粗 */
+    display: block; /* 標題項目顯示為塊級元素 */
+    margin-bottom: 5px; /* 標題與內文之間的間距 */
+}
+
+.content-item {
+    display: inline-block; /* 內文項目顯示為行內塊元素 */
+    margin-right: 20px; /* 內文項目之間的間距 */
+}
+
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     .container {
