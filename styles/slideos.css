@@ -108,6 +108,10 @@ a:hover {
     margin-left: 75px;
 }
 
+table {
+    margin-left: 60px; /* 調整這裡的值以改變縮排 */
+}
+
 .text-image {
     display: flex;
     flex-direction: row;
@@ -150,6 +154,36 @@ a:hover {
 .content-item {
     display: inline-block; /* 內文項目顯示為行內塊元素 */
     margin-right: 20px; /* 內文項目之間的間距 */
+}
+
+.practice-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.practice-button:hover {
+    background-color:  rgba(255, 255, 255, 0);
+}
+
+.practice-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.practice-answer.expanded {
+    max-height: 1000px;
+}
+
+.practice-answer img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
 }
 
 /* Responsive Design */
