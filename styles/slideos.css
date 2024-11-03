@@ -114,10 +114,10 @@ table {
 
 .text-image {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column; /* 修改這行 */
+    align-items: center; /* 新增這行 */
     gap: 20px;
-    flex-wrap: wrap; /* 新增這行以確保內容在小螢幕上換行 */
+    flex-wrap: wrap;
 }
 
 .text-image .text {
@@ -165,8 +165,8 @@ table {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
-    display: block; /* 新增這行 */
-    margin: 0 auto; /* 新增這行 */
+    display: block;
+    margin: 0 auto;
 }
 
 .practice-button:hover {
