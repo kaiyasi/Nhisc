@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiba Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="column is-8 is-offset-2 ">
+                <div class="box">
+                    <form method="POST" action="/buy">
+                        <p>You are buying...</p>
+                        <h1 class="title">A Black Shiba </h1>
+                        <hr>
+                        <div class="field has-text-right">
+                            <p>You have <b>$65536</b></p>
+                            <p>This stuff costs <b>$1024</b></p>
+                        </div>
+                        <div class="field">
+                            <input type="hidden" name="item_id" value="5427">
+                            <input type="hidden" name="cost" value="1024">
+                            <input type="hidden" name="wallet" value="65536">
+                            <button class="button is-success is-fullwidth">Buy!</button>
+                        </div>
+                        <div class="field">
+                            <a href="/" class="button is-danger is-fullwidth">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
