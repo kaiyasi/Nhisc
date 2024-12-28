@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f0f0f0;
+        }
+        #flag {
+            color: green;
+            font-weight: bold;
+            display: none;
+            margin: 20px;
+            padding: 10px;
+            background-color: #e8ffe8;
+            border-radius: 5px;
+        }
+        .hint {
+            color: #666;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cookie Challenge</h1>
+    <div id="flag"></div>
+
+    <script>
+        const encryptedFlag = "TkhJU0NDVEZ7aV93YW50X2VhdF9jMG9raWV9";
+        const key = "secret";
+        
+        function decryptFlag(encrypted) {
+            try {
+                return atob(encrypted);
+            } catch (e) {
+                return "解密錯誤";
+            }
+        }
+
+        function setInitialCookie() {
+            const initialValue = btoa("user");
+            document.cookie = "auth=" + initialValue + ";path=/";
+        }
+
+        function checkCookie() {
+            let auth = document.cookie.split(';').find(row => row.trim().startsWith('auth='));
+            if (auth) {
+                let value = auth.split('=')[1];
+                try {
+                    let decoded = atob(value);
+                    if (decoded === "admin") {
+                        document.getElementById('flag').style.display = 'block';
+                        document.getElementById('flag').textContent = decryptFlag(encryptedFlag);
+                    }
+                } catch (e) {
+                    console.log("Base64 解碼錯誤");
+                }
+            }
+        }
+
+        window.onload = function() {
+            if (!document.cookie.includes('auth=')) {
+                setInitialCookie();
+            }
+            checkCookie();
+        }
+    </script>
+</body>
+</html>
